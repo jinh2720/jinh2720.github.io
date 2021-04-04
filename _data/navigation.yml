@@ -22,7 +22,7 @@ sidebar-sample:
     children:
       - title: "Child Page B1"
         url: /
-      -title: "Child Page B2"
+      - title: "Child Page B2"
         url: /
         
   
