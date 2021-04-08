@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Contents"
+    url: https://jinh2720.github.io/categories/
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Sample Posts"
@@ -11,18 +11,18 @@ main:
   - title: "Sitemap"
     url: /sitemap/
 
-sidebar-sample:
-  - title: "Parent Page A"
-    children:
-      - title: "Child Page A1"
-        url: /
-      - title: "Child Page A2"
-        url: /
-  - title: "Parent Page B"
-    children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
+# sidebar-sample:
+#   - title: "Parent Page A"
+#     children:
+#       - title: "Child Page A1"
+#         url: /
+#       - title: "Child Page A2"
+#         url: /
+#   - title: "Parent Page B"
+#     children:
+#       - title: "Child Page B1"
+#         url: /
+#       - title: "Child Page B2"
+#         url: /
         
   
