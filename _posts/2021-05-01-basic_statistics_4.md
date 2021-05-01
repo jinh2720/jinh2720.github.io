@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[Basic Statistics] 표본평균"
+title: "[Basic Statistics] 모평균과 모분산 추정"
 author_profile: true
-excerpt: "랜덤샘플링, 표본평균"
+excerpt: "t분포, 카이제곱분포"
 categories:
     - Statistics
 ---
