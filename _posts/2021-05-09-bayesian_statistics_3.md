@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Bayesian Statistics] 베이즈 추정의 패러독스"
+title: "[Bayesian] 베이즈 추정의 패러독스"
 author_profile: true
 excerpt: "몬티 홀 문제"
 categories:

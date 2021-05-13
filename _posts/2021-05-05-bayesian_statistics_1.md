@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Bayesian Statistics] 베이즈 추정이란"
+title: "[Bayesian] 베이즈 추정이란"
 author_profile: true
 excerpt: "사전분포, 사후분포"
 categories:

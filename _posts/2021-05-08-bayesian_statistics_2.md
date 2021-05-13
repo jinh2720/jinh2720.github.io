@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Bayesian Statistics] 네이만-피어슨 통계와 베이즈 통계의 공통점과 차이점"
+title: "[Bayesian] 네이만-피어슨 통계와 베이즈 통계의 공통점과 차이점"
 author_profile: true
 excerpt: "추론, 최우원리"
 categories:
