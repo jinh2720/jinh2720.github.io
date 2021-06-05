@@ -4,7 +4,7 @@ title: "텐서와 넘파이의 차이"
 author_profile: true
 excerpt: "tensorflow, numpy"
 categories:
-    - tensorflow
+    - Tensorflow
 ---
 
 tfrecord로 데이터를 변환하고 tfrecord 파일을 출력하는 과정에서 궁금증이 생겼다. 
