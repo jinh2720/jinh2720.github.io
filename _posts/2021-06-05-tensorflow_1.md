@@ -37,7 +37,7 @@ height_to_numpy:  777 # <class 'numpy.int64'>
 - 텐서플로 연산은 자동으로 넘파이 배열을 텐서로 변환한다.
 - 넘파이 연산은 자동으로 텐서를 넘파이 배열로 변환한다.
 
-```py
+```python
 import numpy as np
 
 ndarray = np.ones([3, 3])
@@ -60,7 +60,7 @@ tf.Tensoor와 배열은 메모리 표현을 공유하기 때문에 이러한 변
 
 대부분의 텐서플로 연산은 GPU를 사용하여 가속화된다. 어떠한 코드를 명시하지 않아도, 텐서플로는 연산을 위해 **CPU 또는 GPU를 사용할 것인지를 자동으로 결정**한다. 필요시 텐서를 CPU와 GPU 메모리 사이에서 복사를 한다. 연산의 의해 **생성된 텐서는 전형적으로 연산이 실행된 장치의 메모리에 의해 실행**된다.
 
-```pytho
+```python
 import tensorflow as tf
 
 x = tf.random.uniform([3, 3])
@@ -74,7 +74,7 @@ print(x.device.endswith('GPU:0')) # True
 
 
 
-```py
+```python
 os.environ['CUDA_VISIBLE_DEVICES']='0' # gpu index
 ```
 
@@ -84,7 +84,7 @@ os.environ['CUDA_VISIBLE_DEVICES']='0' # gpu index
 
 그리고 하고자 하는 연산에 대해서 CPU 또는 GPU로 강제할 수도 있다. 
 
-```py
+```python
 import tensorflow as tf
 import time
 
@@ -115,7 +115,7 @@ if tf.test.is_gpu_available():
 
 결과를 보면,
 
-```py
+```python
 10 loops: 158.22ms # CPU
 10 loops: 540.72ms # GPU
 ```
