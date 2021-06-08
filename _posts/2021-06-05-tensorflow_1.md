@@ -124,7 +124,6 @@ if tf.test.is_gpu_available():
 
 
 
- ## Reference
-
+## Reference
 - https://www.tensorflow.org/tutorials/customization/basics?hl=ko#gpu_%EA%B0%80%EC%86%8D
 
