@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "순탄한 길은 없다"
+title                    : "비 오는 날"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Deep Learning Engineer"
