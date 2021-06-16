@@ -36,7 +36,10 @@ Tensorboard.dev는 텐서보드 화면을 그대로 다른 사람과 공유할 �
 ### 텐서보드 공유 링크 생성
 
 ```
-tensorboard dev upload --logdir $DIRECTORY_NAME
+tensorboard dev upload \
+	--logdir $DIRECTORY_NAME \
+	--name "hello tensorboard" \
+	--description "training results"
 ```
 
 최초 실행 시 구글계정을 통해서 인증키를 받는다. 구글계정이 있어야 가능하다. ( 단, 텐서보드를 생성하는 사람 외 조회하는 사람은 구글계정이 필요하지 않다. )
@@ -52,7 +55,7 @@ tensorboard dev list # 링크 조회
 tensorboard dev delete --experiment_id "EXPERIMENT_ID" # 링크 삭제
 ```
 
-링크 조회 명령어를 통해 experiment_id 조회가 가능하다.
+링크 조회 명령어를 통해 experiment_id 조회가 가능하다. tensorboard.dev는 데이터 용량을 제한하고 있기 때문에 적절히 list 를 지워가면서 사용하면 된다.
 
 만약 다른 오류나 문제가 있다면 아래 이메일로 문의 가능하다.
 
