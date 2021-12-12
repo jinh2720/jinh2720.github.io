@@ -1,130 +1,29 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4000/statistics/basic_statistics_1/</loc>
-<lastmod>2021-04-24T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/statistics/basic_statistics_2/</loc>
-<lastmod>2021-04-28T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/statistics/basic_statistics_3/</loc>
-<lastmod>2021-04-30T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/statistics/basic_statistics_4/</loc>
-<lastmod>2021-05-01T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/statistics/bayesian_statistics_1/</loc>
-<lastmod>2021-05-05T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/statistics/bayesian_statistics_2/</loc>
-<lastmod>2021-05-08T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/statistics/bayesian_statistics_3/</loc>
-<lastmod>2021-05-09T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/statistics/bayesian_statistics_4/</loc>
-<lastmod>2021-05-14T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/gpu/gpu_1/</loc>
-<lastmod>2021-05-29T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/protocol/protobuf_1/</loc>
-<lastmod>2021-06-03T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/tfrecord_1/</loc>
-<lastmod>2021-06-04T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/tensorflow/tensorflow_1/</loc>
-<lastmod>2021-06-05T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/tfrecord_2/</loc>
-<lastmod>2021-06-11T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/tfrecord_3/</loc>
-<lastmod>2021-06-14T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/tensorboard_1/</loc>
-<lastmod>2021-06-16T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/tfrecord_4/</loc>
-<lastmod>2021-06-22T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/docker/docker_1/</loc>
-<lastmod>2021-06-23T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_1/</loc>
-<lastmod>2021-06-24T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_2/</loc>
-<lastmod>2021-06-27T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_3/</loc>
-<lastmod>2021-06-28T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_4/</loc>
-<lastmod>2021-06-30T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_5/</loc>
-<lastmod>2021-07-01T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_6/</loc>
-<lastmod>2021-07-05T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_7/</loc>
-<lastmod>2021-07-06T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_8/</loc>
-<lastmod>2021-07-07T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_9/</loc>
-<lastmod>2021-07-08T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mlops/mlops_10/</loc>
-<lastmod>2021-07-14T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/categories/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/_pages/python/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/page2/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/page3/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/google8c32109036d97c6b.html</loc>
-<lastmod>2021-06-12T15:09:03+09:00</lastmod>
-</url>
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+
+      {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if post.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% endif %}
+
+    </url>
+  {% endfor %}
 </urlset>
